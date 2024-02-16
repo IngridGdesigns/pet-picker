@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+}
+
+.modal-outer {
+    display: none;  /* uncomment when placed and styled */
+    background-color: yellow;
+    position: fixed;
+    margin: auto;
+    top: 5px;
+    left: 50px;
+    align-items: center;
+}
