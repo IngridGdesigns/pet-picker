@@ -1,4 +1,4 @@
-# Pet picker
+# pet-picker
 
 Quick start:
 
