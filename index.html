@@ -6,12 +6,25 @@
     </head>
     <body>
         <header>
-        <h1>Select your cat</h1>
-        <p>Find the purrfect cat best suited to your lifestyle!</p>
+            <div class="header">
+                <img src="cat-with-heart.png" role="logo" alt="illustration of cat hugging heart drawn by Anna Alekseeva">
+                <p>Find the purrfect cat best suited to match your lifestyle!</p>
+            </div>
         </header>
-        <main>
-            <h1>Select Traits</h1>
-        </main>
+    <main class="container">
+        <h1>Select Traits</h1>
+        <div id="options">
+            <form id="catbreed-choice">
+                <label for="fur-length">Do you prefer short hair or long hair cats?</label>
+                <input id="fur-length">
+    
+                <div class="field">
+                    <button type="submit" class="full" id="submit">Submit</button>
+    
+                </div>
+            </form>
+        </div>
+    </main>
         <div class="modal-outer">
             <button>close modal X</button>
             <div class="modal-inner"></div>
