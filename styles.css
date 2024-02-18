@@ -1,9 +1,47 @@
-html, body {
-    margin: 0;
+html,
+body {
+    margin: 0 auto;
+    font-family: "Fredoka", sans-serif;
+}
+
+header {
+    background-color: #f07167;
+}
+
+img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    margin: auto;
+    gap: 15px;
+    padding: 30px 10px 15px 10px;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    padding: 5px 0 10px 0;
+    flex-direction: column;
+    margin: auto;
+    width: 360px;
+
+}
+
+h1 {
+    font-weight: 500;
 }
 
 .modal-outer {
-    display: none;  /* uncomment when placed and styled */
+    display: none; /* uncomment when placed and styled */
     background-color: yellow;
     position: fixed;
     margin: auto;
