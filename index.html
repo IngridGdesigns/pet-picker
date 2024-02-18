@@ -1,34 +1,68 @@
 <!doctype html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title>Pick your cat type</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <div class="header">
-                <img src="cat-with-heart.png" role="logo" alt="illustration of cat hugging heart drawn by Anna Alekseeva">
-                <p>Find the purrfect cat best suited to match your lifestyle!</p>
-            </div>
-        </header>
+
+<head>
+    <title>Cat breed selector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="cat-with-heart.png" role="logo" alt="illustration of cat hugging heart drawn by Anna Alekseeva">
+            <p>Find the purrfect cat best suited to match your lifestyle!</p>
+        </div>
+    </header>
     <main class="container">
         <h1>Select Traits</h1>
         <div id="options">
             <form id="catbreed-choice">
-                <label for="fur-length">Do you prefer short hair or long hair cats?</label>
-                <input id="fur-length">
-    
+                <div>
+                    <p>Do you prefer short hair or long hair cats?</p>
+                    <input type="radio" id="short-hair" value="short-hair" name="fur-length">
+                    <label for="short-hair">Short haired</label><br>
+
+                    <input type="radio" id="long-hair" value="long-hair" name="fur-length">
+                    <label for="long-hair">Long haired</label>
+                </div>
+                <div>
+                    <p>Would you prefer a calm or active cat??</p>
+                    <input type="radio" id="active" value="active" name="energy-level">
+                    <label for="active">Very active little furball</label><br>
+
+                    <input type="radio" id="mellow" value="mellow" name="energy-level">
+                    <label for="mellow">A mellow cat that loves to nap and cuddle</label><br>
+
+                    <input type="radio" id="easygoing" value="easygoing" name="energy-level">
+                    <label for="easygoing">A cat that is playful and relaxes on my lap</label>
+                </div>
+                <div>
+                    <p>Do you own other pets?</p>
+                    <input type="radio" id="cat" value="has-cat" name="owns">
+                    <label for="cat">Yes, I already have a cat</label><br>
+
+                    <input type="radio" id="dog" value="has-dog" name="owns">
+                    <label for="dog">Yes, I already have a dog</label><br>
+
+                    <input type="radio" id="none" value="no-pets" name="owns">
+                    <label for="none">No, pets yet</label>
+                </div>
+
                 <div class="field">
                     <button type="submit" class="full" id="submit">Submit</button>
-    
+
                 </div>
             </form>
         </div>
     </main>
-        <div class="modal-outer">
-            <button>close modal X</button>
-            <div class="modal-inner"></div>
-        </div>
-        <script type="module" src="index.js"></script>
-    </body>
+    <div class="modal-outer">
+        <button>close modal X</button>
+        <div class="modal-inner"></div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
 </html>
